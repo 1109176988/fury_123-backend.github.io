@@ -17,7 +17,7 @@ const menuTree: MenuTree = {
       },
       user: {
         title: '用户列表',
-        // conponent: () => import('@/views/system/AdminUser.vue')
+        conponent: () => import('@/views/system/AdminUser.vue')
       }
     }
   },
