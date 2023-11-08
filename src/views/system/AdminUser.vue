@@ -78,7 +78,11 @@ function submitSearch() {
 
 }
 
+import { FormInstance } from 'element-plus';
 
+
+// 链接 el-form 元素
+const searchFormRef = ref<FormInstance>()
 
 
 
@@ -88,8 +92,8 @@ function submitSearch() {
     <div v-loading="loading">
         <el-form inline :model="searchFormState" ref="searchFormRef">
             <!-- 输入框 -->
-            <el-form-item label="用户名" prop="usernaame">
-                <el-input placeholder="可根据前缀模糊查询" :maxlength="33"></el-input>
+            <el-form-item label="用户名" prop="username">
+                <el-input placeholder="可根据前缀模糊查询" :maxlength="33" v-model="searchFormState.username"></el-input>
             </el-form-item>
             <!-- 下拉框 -->
             <el-form-item label="角色" prop="role_id">
@@ -110,7 +114,7 @@ function submitSearch() {
             <!-- 按钮 -->
             <el-form-item>
                 <el-button type="primary" @click="submitSearch">查询</el-button>
-                <el-button>清空</el-button>
+                <el-button @click="searchFormRef?.resetFields()">清空</el-button>
             </el-form-item>
         </el-form>
         <!-- el-table -->
@@ -160,14 +164,15 @@ function submitSearch() {
         </el-table>
 
         <!-- 分页组件 -->
-        <el-pagination small v-model:current-page="params.page" v-model:page-size="params.size" :page-sizes="[10, 20, 50, 100]"
-            layout="total,prev,pager,next,sizes,jumper" :total="total" @current-change="" @size-change=""></el-pagination>
+        <el-pagination small v-model:current-page="params.page" v-model:page-size="params.size"
+            :page-sizes="[10, 20, 50, 100]" layout="total,prev,pager,next,sizes,jumper" :total="total" @current-change=""
+            @size-change=""></el-pagination>
 
 
 
         <!-- el-drawer -->
         <el-drawer>
-            
+
         </el-drawer>
 
     </div>
