@@ -31,19 +31,19 @@ const menuTree: MenuTree = {
         sub: {
           '403': {
             title: '403',
-            // conponent: () => import('@/components/ErrorPage.vue'),
+            conponent: () => import('@/components/ErrorPage.vue'),
             isPub: true,
             props: errorMap[403]
           },
           '404': {
             title: '404',
-            // conponent: () => import('@/components/ErrorPage.vue'),
+            conponent: () => import('@/components/ErrorPage.vue'),
             isPub: true,
             props: errorMap[404]
           },
           '500': {
             title: '500',
-            // conponent: () => import('@/components/ErrorPage.vue'),
+            conponent: () => import('@/components/ErrorPage.vue'),
             isPub: true,
             props: errorMap[500]
           }

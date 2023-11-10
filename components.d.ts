@@ -45,6 +45,7 @@ declare module 'vue' {
     ElTag: typeof import('element-plus/es')['ElTag']
     ElTebleColumn: typeof import('element-plus/es')['ElTebleColumn']
     ElTree: typeof import('element-plus/es')['ElTree']
+    ErrorPage: typeof import('./src/components/ErrorPage.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
     IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']
