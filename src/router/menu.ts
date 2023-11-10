@@ -52,13 +52,13 @@ const menuTree: MenuTree = {
       form: {
         title: '表单组件',
         icon: Edit,
-        // conponent: () => import('@/views/demo/FormItem.vue'),
+        conponent: () => import('@/views/demo/FormItem.vue'),
         isPub: true
       },
       drag: {
         title: '拖拽表单',
         icon: Rank,
-        // conponent: () => import('@/views/demo/DragForm.vue'),
+        conponent: () => import('@/views/demo/DragForm.vue'),
         isPub: true
       }
     }
