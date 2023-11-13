@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { MenuItem } from '@/types/route'
-import { defineProps } from 'vue'
+// import { defineProps } from 'vue'
 const props = defineProps<{
   items: MenuItem[]
 }>()

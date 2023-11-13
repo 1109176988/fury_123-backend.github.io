@@ -69,14 +69,14 @@ const menuTree: MenuTree = {
     sub: {
       crypto: {
         title: '数据加解密',
-        // conponent: () => import('@/views/tool/TextCrypto.vue')
+        conponent: () => import('@/views/tool/TextCrypto.vue')
       }
     }
   },
   password: {
     title: '修改密码',
     icon: Lock,
-    // conponent: () => import('@/views/user/ChangePwd.vue'),
+    conponent: () => import('@/views/user/ChangePwd.vue'),
     isPub: true
   }
 }
