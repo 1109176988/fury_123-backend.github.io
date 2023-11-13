@@ -51,10 +51,6 @@ import GroupInput from '@/components/GroupInput.vue'
                     value-format="YYYY-MM-DD HH:mm:ss"
                     @change="(v: any) => ([formState.datetime_begin, formState.datetime_end] = v || ['', ''])"></el-date-picker>
             </el-form-item>
-            <el-form-item label="动态输入框组">
-                <GroupInput :values="formState.inputs" :limit="5" :maxlength="20"
-                    @ok="(values) => (formState.inputs = values)" />
-            </el-form-item>
         </el-form>
     </div>
 </template>
