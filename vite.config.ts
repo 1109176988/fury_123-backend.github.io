@@ -7,6 +7,7 @@ import { resolve } from 'node:path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base:'/fury_123-backend-system/',
   plugins: [
     vue(),
     AutoImport({
