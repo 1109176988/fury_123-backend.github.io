@@ -1,0 +1,1 @@
+import{_ as t,o,c,e as s}from"./index-e2bf60b4.js";import{E as n}from"./el-result-091a50ab.js";import"./plugin-vue_export-helper-1cff8a04.js";const r={};function l(a,_){const e=n;return o(),c("div",null,[s(e,{icon:"success",title:"欢迎光临","sub-title":"Please follow the instructions"})])}const f=t(r,[["render",l]]);export{f as default};
